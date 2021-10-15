@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cssMemSlider</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cssMemSlider</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    
+  <section class="page">
+    <div class="meme-slider">
+      <input class="meme-slider__input" id="radio-1" name="meme-slider__inputs" type="radio" checked>
+      <input class="meme-slider__input" id="radio-2" name="meme-slider__inputs" type="radio">
+      <input class="meme-slider__input" id="radio-3" name="meme-slider__inputs" type="radio">
+      <input class="meme-slider__input" id="radio-4" name="meme-slider__inputs" type="radio">
+      <div class="meme-slider__inner meme-slider__wrap">
+        <div class="meme-slider__slides meme-slider__images">
+          <img class="meme-slider__slide meme-slider__image" src="1.jpg">
+          <img class="meme-slider__slide meme-slider__image" src="2.jpg">
+          <img class="meme-slider__slide meme-slider__image" src="3.jpg">
+          <img class="meme-slider__slide meme-slider__image" src="4.jpg">
+        </div>
+      </div>
+      <div class="meme-slider__controls">
+        <label class="meme-slider__label" for="radio-1"></label>
+        <label class="meme-slider__label" for="radio-2"></label>
+        <label class="meme-slider__label" for="radio-3"></label>
+        <label class="meme-slider__label" for="radio-4"></label>
+      </div>
+      <div class="meme-slider__inner meme-slider__descriptions-wrap">
+        <div class="meme-slider__slides meme-slider__descriptions">
+          <span class="meme-slider__slide meme-slider__description">Git tragedy</span>
+          <span class="meme-slider__slide meme-slider__description">Опасность вкатывания</span>
+          <span class="meme-slider__slide meme-slider__description">Страдающее</span>
+          <span class="meme-slider__slide meme-slider__description">Сектор приз</span>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>
