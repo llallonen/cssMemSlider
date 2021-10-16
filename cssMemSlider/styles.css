@@ -14,6 +14,18 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (max-width: 560px) {
+  .page {
+    max-width: 70vw;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .page {
+    max-width: 80vw;
+  }
+}
+
 .meme-slider {
   display: flex;
   justify-content: space-between;
@@ -21,6 +33,18 @@ body {
   row-gap: 1rem;
   padding-top: 5rem;
   background: transparent;
+}
+
+@media screen and (max-width: 421px) {
+  .meme-slider {
+    padding-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .meme-slider {
+    padding-top: 2.7rem;
+  }
 }
 
 .meme-slider__input {
@@ -33,12 +57,20 @@ body {
 
 .meme-slider__slides {
   width: 400%;
+  height: 100%;
 }
 
 .meme-slider__wrap {
   width: 100%;
+  max-height: 22rem;
   box-shadow: 0px 4px 20px 8px rgba(59, 79, 144, 0.32);
   border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .meme-slider__wrap {
+    max-height: 18rem;
+  }
 }
 
 .meme-slider__images {
@@ -55,8 +87,8 @@ body {
 }
 
 .meme-slider__image {
-  max-height: 23rem;
-  object-fit: contain;
+  display: flex;
+  height: 100%;
 }
 
 .meme-slider__descriptions-wrap {
@@ -64,7 +96,7 @@ body {
   order: 1;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 769px) {
   .meme-slider__descriptions-wrap {
     width: 100%;
     max-width: 100%;
@@ -84,7 +116,14 @@ body {
   text-shadow: 1px 4px 4px rgba(86, 127, 186);
 }
 
+@media screen and (max-width: 769px) {
+  .meme-slider__description{
+    font-size: 21px;
+  }
+}
+
 img {
+  max-height: 100%;
   width: 100%;
   object-fit: contain;
 }
@@ -105,6 +144,7 @@ img {
 
 @media screen and (max-width: 768px) {
   .meme-slider__controls {
+    max-width: 40%;
     margin: 0 auto;
     order: 1;
   }
@@ -132,8 +172,20 @@ img {
   transition: background-color 0.2s, border-color 0.2s;
 }
 
+@media screen and (max-width: 769px) {
+  .meme-slider__label:before {
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+}
+
 .meme-slider__label:hover:before {
   background: #fff;
+  border-color: #fff;
+}
+
+.meme-slider__label:active:before {
+  background: rgb(98, 95, 129);
   border-color: #fff;
 }
 
