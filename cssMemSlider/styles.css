@@ -67,6 +67,8 @@ body {
 }
 
 .meme-slider__slides {
+  display: flex;
+  gap: 20px;
   width: 400%;
   height: 100%;
 }
@@ -99,7 +101,6 @@ body {
 }
 
 .meme-slider__slide {
-  float: left;
   width: 25%;
 }
 
@@ -155,7 +156,6 @@ img {
   display: flex;
   flex-direction: row;
   max-width: 30%;
-  z-index: 5;
   order: 3;
 }
 
@@ -177,8 +177,7 @@ img {
   cursor: pointer;
 }
 
-.meme-slider__label:before {
-  content: "";
+.meme-slider__label > span {
   display: block;
   width: 0.5rem;
   height: 0.5rem;
@@ -190,26 +189,26 @@ img {
 }
 
 @media screen and (max-width: 769px) {
-  .meme-slider__label:before {
+  .meme-slider__label > span {
     width: 0.435rem;
     height: 0.435rem;
   }
 }
 
-.meme-slider__label:hover:before {
+.meme-slider__label:hover > span {
   background: #fff;
   border-color: #fff;
 }
 
-.meme-slider__label:active:before {
+.meme-slider__label:active > span {
   background: rgb(98, 95, 129);
   border-color: #fff;
 }
 
-#radio-1:checked~.meme-slider__controls .meme-slider__label[for="radio-1"]:before,
-#radio-2:checked~.meme-slider__controls .meme-slider__label[for="radio-2"]:before,
-#radio-3:checked~.meme-slider__controls .meme-slider__label[for="radio-3"]:before,
-#radio-4:checked~.meme-slider__controls .meme-slider__label[for="radio-4"]:before {
+#radio-1:checked~.meme-slider__controls .meme-slider__label[for="radio-1"] > span,
+#radio-2:checked~.meme-slider__controls .meme-slider__label[for="radio-2"] > span,
+#radio-3:checked~.meme-slider__controls .meme-slider__label[for="radio-3"] > span,
+#radio-4:checked~.meme-slider__controls .meme-slider__label[for="radio-4"] > span {
   background-color: transparent;
 }
 
